@@ -24,9 +24,9 @@ Array.prototype.myFilter = function (cbFn, thisArg) {
 const nums = [1, 2, 3];
 
 const filtered = nums.myFilter(
-  (x, i, a) => {
+  function (x, i, a) {
     console.log(this, this[i]);
-    this[i] > 1;
+    return this[i] > 1;
   },
   [1, 2]
 );
