@@ -76,17 +76,17 @@ CalculatorFn.prototype = {
       return this._y;
     },
     setX(val) {
-      Calculator.lastX = this._x = val;
+      CalculatorFn.lastX = this._x = val;
       console.log(`Set x as ${this.x}`);
     },
     setY(val) {
-      Calculator.lastY = this._y = val;
+      CalculatorFn.lastY = this._y = val;
       console.log(`Set y as ${this.y}`);
     },
     logSum() {
-      console.log(`Sum of ${Calculator.lastX} and ${Calculator.lastY} is ${Calculator.lastX + Calculator.lastY}`);
+      console.log(`Sum of ${CalculatorFn.lastX} and ${CalculatorFn.lastY} is ${CalculatorFn.lastX + CalculatorFn.lastY}`);
     },
     logSub() {
-      console.log(`Sub of ${Calculator.lastX} and ${Calculator.lastY} is ${Calculator.lastX - Calculator.lastY}`);
+      console.log(`Sub of ${CalculatorFn.lastX} and ${CalculatorFn.lastY} is ${CalculatorFn.lastX - CalculatorFn.lastY}`);
     }
   }

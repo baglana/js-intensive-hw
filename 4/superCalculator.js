@@ -38,4 +38,4 @@ SuperCalculatorFn.prototype = {
 };
 
 Object.setPrototypeOf(SuperCalculatorFn.prototype, CalculatorFn.prototype);
-Object.setPrototypeOf(SuperCalculatorFn, CalculatorFn);
+// Object.setPrototypeOf(SuperCalculatorFn, CalculatorFn);

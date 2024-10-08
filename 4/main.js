@@ -16,7 +16,7 @@ console.log(SuperCalculatorFn.prototype)
 // calc1.logSum();
 // calc1.logSub();
 
-const calc2 = new SuperCalculator(2, 3);
+const calc2 = new SuperCalculatorFn(2, 3);
 
 calc2.logSum();
 calc2.logSub();
