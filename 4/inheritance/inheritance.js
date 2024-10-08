@@ -18,6 +18,11 @@ function BaseUserService() {
 BaseUserService.prototype.getUsers = function () {};
 BaseUserService.prototype.getUserById = function () {};
 
+console.log(UserService);
+console.log(UserService.prototype);
+console.log(UserService.prototype.constructor);
+
+
 function AdminService() {}
 
 // AdminService.prototype = new BaseUserService()
@@ -30,6 +35,6 @@ function AdminService() {}
 
 Object.setPrototypeOf(AdminService.prototype, BaseUserService.prototype);
 
-console.log(AdminService);
-console.log(AdminService.prototype);
-console.log(AdminService.prototype.constructor);
+// console.log(AdminService);
+// console.log(AdminService.prototype);
+// console.log(AdminService.prototype.constructor);
